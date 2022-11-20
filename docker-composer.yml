@@ -1,0 +1,14 @@
+version: 3.7
+
+services:
+  bs-idp:
+    image:
+      build: idp/Dockerfile
+  bs-sp:
+    image: httpd:2.4.0
+  bs-ldap:
+    image: bitnami/openldap:2.6.3
+  ds-disc:
+    image:
+      build: disc/Dockerfile
+
